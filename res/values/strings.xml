@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="com.google.ads.AdView">
+        <attr name="adSize">
+            <enum name="BANNER" value="1" />
+            <enum name="IAB_MRECT" value="2" />
+            <enum name="IAB_BANNER" value="3" />
+            <enum name="IAB_LEADERBOARD" value="4" />
+        </attr>
+        <attr name="adUnitId" format="string" />
+        <attr name="loadAdOnCreate" format="string" />
+    </declare-styleable>
+
+    <string name="alert_dialog_username">Nombre</string>
+    <string name="alert_dialog_frase">Frase/Comentario</string>
+    <string name="share">¡Comparta esta palabra!</string>
+    <string name="noword">Recuperando la palabra del día</string>
+    <string name="app_name">Un Dia Una Palabra</string>
+    <string name="menuPreferences">Configuración</string>
+    <string name="menuHelp">Ayuda</string>
+    <string name="menuInfo">About</string>
+    <string name="menuHistorico">Descargar palabras pasadas</string>
+    <string name="numberQuestions">Número de preguntas</string>
+    <string name="stats">Estadística</string>
+    <string name="next">Siguiente</string>
+    <string name="max">Max</string>
+    <string name="comentarios">Comentarios</string>
+    <string name="sendComment">Enviar Comentario</string>
+    <string name="reset">Resetear estadística</string>
+    <string name="start">Espezar a jugar</string>
+    <string name="title">Logo</string>
+    <string name="result">Resultado</string>
+    <string name="dayWord">Palabra del día</string>
+    <string name="wordList">Lista</string>
+    <string name="game">Juego</string>
+    <string name="definition">Definición</string>
+    <string name="date">Fecha</string>
+    <string name="calification">Calificación</string>
+    <string name="saveCalification">Guardar puntuación</string>
+    <string name="aboutHow">La primera vez que se ejecuta la aplicación se descargarán las palabras de los últimos 10 días. A partir de ese momento, la aplicación tratará de actualizarse automáticame y descargar una palabra cada día. Siempre que el usuario quiera consultar la palabra del día y ésta no haya sido descargarda, se intentará obtener en ese momento. Por tanto, la lista de palabras irá aumentando cada día. Esta lista se podrá ordenar alfabéticamente, por fecha de aparición de la palabra o según la calificación que se haya dado.</string>
+    <string name="aboutGame">El juego es tan sencillo como que sólo hará falta seleccionar el número de palabras cuyo significado se quiere adivinar. Si se selecciona el máximo valor, se jugará con todas las palabras que se han ido acumulando.</string>
+    <string name="aboutHistory">"Un día, una palabra" nació por petición de mi amiga Elena:</string>
+    <string name="helpAdMob">¡Haga click en el anuncio! Ayudará a mantener la aplicación</string>
+    <string name="author_key">AuthorKey</string>
+    <string name="pref_order_key">PrefOrderKey</string>
+
+    <string-array name="pref_order">
+        <item>Palabra</item>
+        <item>Fecha</item>
+        <item>Nota</item>
+    </string-array>
+    <string-array name="pref_order_values">
+        <item>word ASC</item>
+        <item>date_ms DESC</item>
+        <item>rating DESC</item>
+    </string-array>
+
+    <string name="pref_first_screen_key">FirstScreenKey</string>
+
+    <string-array name="pref_first_screen">
+        <item>Menu</item>
+        <item>Palabra del día</item>
+    </string-array>
+    <string-array name="pref_first_screen_values">
+        <item>menu</item>
+        <item>word</item>
+    </string-array>
+
+    <string name="pref_notification_key">NotificationKey</string>
+
+    <string-array name="pref_notification">
+        <item>On</item>
+        <item>Off</item>
+    </string-array>
+    <string-array name="pref_notification_values">
+        <item>on</item>
+        <item>off</item>
+    </string-array>
+
+    <string name="guardar_puntuacion">Guardar puntuación</string>
+    <string name="guardar">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="enviar">Envíar</string>
+
+</resources>

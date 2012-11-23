@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/list_selector" >
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rating="4" 
+        android:layout_alignParentRight="true"
+        android:paddingTop="3dp"
+        />
+
+    <TextView
+        android:id="@+id/textWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Word"
+        android:textColor="#000"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textWord"
+        android:gravity="left"
+        android:text="Small Text"
+        android:textColor="#333"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textComments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textDate"
+        android:layout_alignParentRight="true"
+        android:text="0"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textComments"
+        android:layout_below="@+id/ratingBar"
+        android:layout_toLeftOf="@+id/textComments"
+        android:src="@drawable/comment" />
+
+</RelativeLayout>

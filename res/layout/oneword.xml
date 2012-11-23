@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/oneWordLinear"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ECCEAC"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="30" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#AC8D6E"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:text="@string/definition"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/texto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="fill_horizontal"
+                android:padding="30dp"
+                android:text="@string/noword"
+                android:textColor="#000" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <Button
+                    android:id="@+id/buttonEnviarFrase"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sendComment" />
+
+                <Button
+                    android:id="@+id/buttonShare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Compartir" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#AC8D6E"
+                android:text="@string/date"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/fecha"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#AC8D6E"
+                android:text="@string/calification"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000" />
+
+            <RatingBar
+                android:id="@+id/ratingBarGrande"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp" />
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/buttonGuardarPuntuacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/saveCalification" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:background="#AC8D6E"
+                android:text="@string/comentarios"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000" />
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/linearLayoutComentarios"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

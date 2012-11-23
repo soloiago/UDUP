@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iago.undiaunapalabra"
+    android:versionCode="3"
+    android:versionName="1.1" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".activities.FirstActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wordlist.WordListActivity"
+            android:configChanges="orientation" >
+        </activity>
+        <activity
+            android:name=".activities.OneWordActivity"
+            android:configChanges="orientation" >
+        </activity>
+        <activity
+            android:name=".game.GameActivity"
+            android:configChanges="orientation" >
+        </activity>
+        <activity android:name=".game.GameResultActivity" >
+        </activity>
+        <activity android:name=".activities.WordPreferences" >
+        </activity>
+        <activity 
+            android:name=".activities.AboutActivity" >
+        </activity>
+        <activity 
+            android:name=".activities.HowToActivity" >
+        </activity>
+        <activity
+            android:name=".game.PreGameActivity"
+            android:configChanges="orientation" >
+        </activity>
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" >
+        </activity>
+
+        <receiver android:name=".receivers.OnBootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receivers.OnAlarmReceiver"
+            android:process=":remote" />
+    </application>
+
+</manifest>

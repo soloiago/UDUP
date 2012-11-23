@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:defaultValue="date_ms DESC"
+        android:entries="@array/pref_order"
+        android:entryValues="@array/pref_order_values"
+        android:key="@string/pref_order_key"
+        android:summary="Seleccione el criterio por el que quiere que se ordenar la lista de palabras"
+        android:title="Orden de la lista" />
+    
+    <ListPreference
+        android:defaultValue="menu"
+        android:entries="@array/pref_first_screen"
+        android:entryValues="@array/pref_first_screen_values"
+        android:key="@string/pref_first_screen_key"
+        android:summary="Seleccione la primera pantalla que quiere ver al abrir la apliación"
+        android:title="Primera pantalla" />
+    
+    <ListPreference
+        android:defaultValue="on"
+        android:entries="@array/pref_notification"
+        android:entryValues="@array/pref_notification_values"
+        android:key="@string/pref_notification_key"
+        android:summary="Active/desactive la notificación de nueva palabra"
+        android:title="Notificación de nueva palabra" />
+
+</PreferenceScreen>
